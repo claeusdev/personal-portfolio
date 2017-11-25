@@ -1,5 +1,40 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="pa3">
+  <div class="w-100 w-50-ns center">
+    <nav class="mb3">
+      <div class="dn-ns bb b--black-10">
+        <div class="f3 dib">
+          <input type="checkbox" id="burger" class="absolute dn" value="on">
+          <label for="burger" class="db dn-ns pointer">
+            <span class="f3 ion-navicon"></span>
+          </label>
+        </div>
+        <div class="w-80 f3 dib center tc">
+          <a class="near-black link  mr3 underline-hover mb3 f3-ns serif" href="/">Nana</a>
+        </div>
+      </div>
+      <div class="dn db-ns mv3" id="nav">
+        <a class="near-black link  mr3 underline-hover dn dib-ns ml3 f4-ns" href="/">Nana</a>
+        <div class="fr-ns center">
+          {{#link-to 'about' class="near-black link mr3 underline-hover f4-ns"}}
+            About
+          {{/link-to}}
+          {{#link-to 'contact' class="near-black link mr3 underline-hover f4-ns"}}
+            Contact
+          {{/link-to}}
+          {{#link-to 'projects' class="near-black link mr3 underline-hover f4-ns"}}
+            Projects
+          {{/link-to}}
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
 
-{{outlet}}
+{{ outlet }}
+<div class="pa3">
+  <div class="w-100 center">
+    <footer class="w-100 dib bt b--black-10 mt4 pv4 ph3 ph5-m ph6-l">
+      <small class="f6 ph2 db tc">© <span>2017</span><span class="ph2 f6">Nana Adjei Manu. All Rights Reserved.</span></small>
+    </footer>
+  </div>
+</div>

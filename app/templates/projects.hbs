@@ -1,0 +1,18 @@
+
+
+<div class="pa3">
+	<div class="w-100 w-50-ns center">
+		<article class="pa3 pa5-ns">
+		  <h1 class="f3 f1-m f-headline-l">Work</h1>
+		  <p class="measure lh-copy">
+		    I’ve had the opportunity to work on some incredible projects in the past years, and have also dedicated time to craft products of my own. The following showcases a few select work items.
+		  </p>
+		</article>
+		<section>
+			{{#each model as |projectUnit|}}
+				{{project-listing project=projectUnit}}
+			{{/each}}
+		</section>
+	</div>
+</div>
+
